@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Recipe_Post
 
 # Create your views here.
-def first_message(request):
-   return HttpResponse('hello')
+class PostList(generic.ListView):
+    model = Recipe_Post
