@@ -10,6 +10,14 @@ class Recipe_Post(models.Model):
     ingredients = models.TextField()
     instructions = models.TextField()
     description = models.TextField()
+    save = models.BooleanField(User, related_name='saved_recipes', default=False)
+
+
+class save(models.Model): 
+    save = models.ManyToManyField(User, related_name='saved_recipes')
+
+    def __str__(self):
+        return f"Saves: "
 
 class Comment(models.Model):
     post = models.ForeignKey(Recipe_Post, on_delete=models.CASCADE, related_name="comments")
