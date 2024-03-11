@@ -10,7 +10,7 @@ class Recipe_Post(models.Model):
     ingredients = models.TextField()
     instructions = models.TextField()
     description = models.TextField()
-    save = models.BooleanField(User, default=False)
+    #save = models.BooleanField(User, default=False)
 
 
 class save(models.Model): 
