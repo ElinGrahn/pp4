@@ -7,7 +7,7 @@ from django_summernote.admin import SummernoteModelAdmin
 class PostAdmin(SummernoteModelAdmin):
     list_display = ('title', 'created_on')
     search_fields = ['title']
-    summernote_fields = ('ingredients', 'instructions', 'description',)
+    summernote_fields = ('ingredients', 'instructions', 'description', 'title',)
 
 # Register your models here.
 admin.site.register(Comment)
