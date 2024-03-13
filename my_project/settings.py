@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-j!&v!@c=xcas_0tm++&bv0_#&vf*!)8vy5*0+x1&q%#orxqkvv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-elingrahn-pp4-mz2il7fogiz.ws-eu108.gitpod.io' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-elingrahn-pp4-mz2il7fogiz.ws-eu109.gitpod.io' ,'.herokuapp.com']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'home',
 ]
 
