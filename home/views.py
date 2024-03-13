@@ -50,3 +50,14 @@ def login(request):
         "blog/login.html",
         {"post": post},
     )
+
+def recipe_detail(request):
+    
+    queryset = Post.objects.filter(title=1)
+    post = get_object_or_404(queryset)
+
+    return render(
+        request,
+        "blog/recipe_detail.html",
+        {"post": post},
+    )
