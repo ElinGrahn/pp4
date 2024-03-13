@@ -9,7 +9,7 @@ class PostList(generic.ListView):
 
 def recipes(request):
     
-    queryset = Post.objects.filter(title=1)
+    queryset = Post.objects.filter(last=1)
     post = get_object_or_404(queryset)
 
     return render(

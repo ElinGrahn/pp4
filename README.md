@@ -10,6 +10,8 @@ pics:
 https://pixabay.com/
 https://www.pexels.com/sv-se/
 
+bootstrap - navbar
+
 
 bugs:
 since I have not added any templates to my index file, while deplying after adding my first post only an error message shows up.
