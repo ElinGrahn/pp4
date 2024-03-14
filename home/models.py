@@ -1,17 +1,17 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 # Model for posting recipes
 class Recipe_Post(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    featured_image = CloudinaryField('image', default='placeholder')
     created_on = models.DateTimeField(auto_now_add=True)
     ingredients = models.TextField()
     instructions = models.TextField()
     description = models.TextField()
-    #save = models.BooleanField(User, default=False)
-
 
 class save(models.Model): 
     save = models.ManyToManyField(User, related_name='saved_recipes')
