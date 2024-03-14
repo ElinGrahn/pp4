@@ -7,8 +7,11 @@ class PostList(generic.ListView):
     queryset = Recipe_Post.objects.filter(title=1)
     template_name = 'index.html'
 
-
 def recipes(request):
+    recipes = Recipe_Post.objects.all()
+    return render(request, "recipes.html", {"Recipes": recipes})
+
+"""def recipes(request):
     
     queryset = Post.objects.filter(last=1)
     post = get_object_or_404(queryset)
@@ -17,7 +20,7 @@ def recipes(request):
         request,
         "blog/recipes.html",
         {"post": post},
-    )
+    )"""
 
 def favourites(request):
 
