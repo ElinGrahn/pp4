@@ -60,6 +60,8 @@ https://www.pexels.com/sv-se/
 
 bootstrap - navbar
 
+favicon- https://favicon.io/
+
 Code institute - I think therfore I blog
 
 picking coulors - https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373
