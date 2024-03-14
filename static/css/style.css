@@ -13,8 +13,24 @@ body {
     color: #faedcd;
 }
 
-a {
+a, h1, p {
     font-family: 'Truculenta';
+}
+
+#img-home {
+    height: 450px;
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+#home-txt {
+    border-style: solid;
+    height: 290px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.6;
 }
 
 main {

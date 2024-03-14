@@ -5,7 +5,7 @@ from .models import Recipe_Post
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Recipe_Post.objects.filter(title=1)
-    template_name = 'base.html'
+    template_name = 'index.html'
 
 
 def recipes(request):
