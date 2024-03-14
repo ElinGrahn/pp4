@@ -11,57 +11,19 @@ def recipes(request):
     recipes = Recipe_Post.objects.all()
     return render(request, "recipes.html", {"Recipes": recipes})
 
-"""def recipes(request):
-    
-    queryset = Post.objects.filter(last=1)
-    post = get_object_or_404(queryset)
-
-    return render(
-        request,
-        "blog/recipes.html",
-        {"post": post},
-    )"""
-
 def favourites(request):
-
-    queryset = Post.objects.filter(title=1)
-    post = get_object_or_404(queryset)
-
-    return render(
-        request,
-        "blog/favourites.html",
-        {"post": post},
-    )
-
-def register(request):
-   
-    queryset = Post.objects.filter(title=1)
-    post = get_object_or_404(queryset)
-
-    return render(
-        request,
-        "blog/register.html",
-        {"post": post},
-    )
-
-def login(request):
-    
-    queryset = Post.objects.filter(title=1)
-    post = get_object_or_404(queryset)
-
-    return render(
-        request,
-        "blog/login.html",
-        {"post": post},
-    )
+    recipes = Recipe_Post.objects.all()
+    return render(request, "favourites.html", {"favourites": recipes})
 
 def recipe_detail(request):
-    
-    queryset = Post.objects.filter(title=1)
-    post = get_object_or_404(queryset)
+    recipes = Recipe_Post.objects.all()
+    return render(request, "recipe_detail.html", {"Recipe_detail": recipes})
 
-    return render(
-        request,
-        "blog/recipe_detail.html",
-        {"post": post},
-    )
+
+def register(request):
+    recipes = Recipe_Post.objects.all()
+    return render(request, "register.html", {"register": form})
+
+def login(request):
+    recipes = Recipe_Post.objects.all()
+    return render(request, "login.html", {"login": form})

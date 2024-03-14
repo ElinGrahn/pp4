@@ -68,6 +68,7 @@ Code institute - I think therfore I blog
 
 picking coulors - https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373
 
+flip-cards - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
 
 bugs:
 since I have not added any templates to my index file, while deplying after adding my first post only an error message shows up.
