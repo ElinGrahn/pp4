@@ -1,1 +1,17 @@
 {% extends "base.html" %}
+
+{% block content %}
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="" alt="" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Ingredients:</h1> 
+        <p>{{Recipe_Post.ingredients}}</p>
+        <p>View the whole recipe <link rel="stylesheet" href="recipe_detail.html">here</p>
+      </div>
+    </div>
+  </div>
+
+  {% endblock content %}

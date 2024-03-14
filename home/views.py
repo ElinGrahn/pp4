@@ -7,6 +7,7 @@ class PostList(generic.ListView):
     queryset = Recipe_Post.objects.filter(title=1)
     template_name = 'base.html'
 
+
 def recipes(request):
     
     queryset = Post.objects.filter(last=1)

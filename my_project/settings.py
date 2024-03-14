@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import cloudinary_storage
 if os.path.isfile('env.py'):
     import env
 
@@ -30,7 +31,7 @@ SECRET_KEY = 'django-insecure-j!&v!@c=xcas_0tm++&bv0_#&vf*!)8vy5*0+x1&q%#orxqkvv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-elingrahn-pp4-mz2il7fogiz.ws-eu109.gitpod.io' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-elingrahn-pp4-mz2il7fogiz.ws-eu109.gitpod.io' , '8000-elingrahn-pp4-mz2il7fogiz.ws-eu110.gitpod.io' , '.herokuapp.com']
 
 
 # Application definition
@@ -47,8 +48,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary',
     'django_summernote',
+    'cloudinary',
     'home',
 ]
 

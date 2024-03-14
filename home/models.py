@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 # Model for posting recipes
 class Recipe_Post(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=200, unique='true')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     featured_image = CloudinaryField('image', default='placeholder')
     created_on = models.DateTimeField(auto_now_add=True)

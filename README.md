@@ -62,6 +62,8 @@ bootstrap - navbar
 
 favicon- https://favicon.io/
 
+font awesome - https://fontawesome.com/
+
 Code institute - I think therfore I blog
 
 picking coulors - https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373
@@ -69,3 +71,5 @@ picking coulors - https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373
 
 bugs:
 since I have not added any templates to my index file, while deplying after adding my first post only an error message shows up.
+
+when opening the page in a browser the disallowed host popped up and I needed to add another url to the allowed host in settings.py
